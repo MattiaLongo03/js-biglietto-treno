@@ -18,11 +18,11 @@ output prezzo finale
 
 const n_km = parseInt(prompt('Inserisci quanti kilometri'));
 const age = parseInt(prompt('Inserisci quanti anni hai'));
-const prezzo = 0.21 * n_km;
+let prezzo_finale = 0.21 * n_km;
 if (age >= 1 && age <= 17){
-    prezzo_finale = prezzo-(prezzo * 20 / 100);
+    prezzo_finale = prezzo_finale-(prezzo_finale * 20 / 100);
 } else if (age >= 65){
-    prezzo_finale = prezzo-(prezzo*40/100);
+    prezzo_finale = prezzo_finale-(prezzo_finale * 40 / 100);
 }
 prezzo_finale = prezzo_finale.toFixed(2);
 console.log(prezzo_finale+'€');

@@ -9,9 +9,9 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 calcolo prezzo:
 prezzo=0.21*numero km
 SE età >=1 & età <=17
-prezzo finale=prezzo*20/100
+prezzo finale=prezzo finale-(prezzo finale*20/100)
 ALTRIMENTI SE età >=65
-prezzo finale=prezzo*40/100
+prezzo finale=prezzo finale-(prezzo finale*40/100)
 FINE SE
 output prezzo finale
 */
